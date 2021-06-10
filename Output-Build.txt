@@ -1,0 +1,4 @@
+﻿1>------ Build started: Project: QLCHApple_GUI, Configuration: Release Any CPU ------
+1>D:\Winform\DAWNC\test\QLCHApple_Version15 update 11.4\QLCHApple\QLCHApple_GUI\frmPhanQuyen.cs(120,82,120,83): error CS1026: ) expected
+1>D:\Winform\DAWNC\test\QLCHApple_Version15 update 11.4\QLCHApple\QLCHApple_GUI\frmPhanQuyen.cs(120,83,120,84): error CS1513: } expected
+========== Build: 0 succeeded, 1 failed, 3 up-to-date, 0 skipped ==========

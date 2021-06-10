@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3BD51828-F38D-4B57-A1AF-82695AF9C510}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLCHApple_GUI</RootNamespace>
+    <AssemblyName>QLCHApple_GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Export, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.1.Extensions, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaoCao.Designer.cs">
+      <DependentUpon>frmBaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLBH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLBH.Designer.cs">
+      <DependentUpon>frmQLBH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLKH.Designer.cs">
+      <DependentUpon>frmQLKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLLoaiNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLLoaiNV.Designer.cs">
+      <DependentUpon>frmQLLoaiNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLLoaiSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLLoaiSP.Designer.cs">
+      <DependentUpon>frmQLLoaiSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLNH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLNH.Designer.cs">
+      <DependentUpon>frmQLNH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLSP.Designer.cs">
+      <DependentUpon>frmQLSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLNV.Designer.cs">
+      <DependentUpon>frmQLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTTNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTTNV.Designer.cs">
+      <DependentUpon>frmTTNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTTPM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTTPM.Designer.cs">
+      <DependentUpon>frmTTPM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicsEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GraphicsEditViewInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryItemGraphicsEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util.cs" />
+    <Compile Include="XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReportHoaDonBan.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReportHoaDonBan.Designer.cs">
+      <DependentUpon>XtraReportHoaDonBan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmBaoCao.resx">
+      <DependentUpon>frmBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLBH.resx">
+      <DependentUpon>frmQLBH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLKH.resx">
+      <DependentUpon>frmQLKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLLoaiNV.resx">
+      <DependentUpon>frmQLLoaiNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLLoaiSP.resx">
+      <DependentUpon>frmQLLoaiSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLNH.resx">
+      <DependentUpon>frmQLNH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLSP.resx">
+      <DependentUpon>frmQLSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLNV.resx">
+      <DependentUpon>frmQLNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTTNV.resx">
+      <DependentUpon>frmTTNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTTPM.resx">
+      <DependentUpon>frmTTPM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReportHoaDonBan.resx">
+      <DependentUpon>XtraReportHoaDonBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QLCHApple_BUS\QLCHApple_BUS.csproj">
+      <Project>{2c0503d0-8a3f-4803-9e0a-be0b27a34ebe}</Project>
+      <Name>QLCHApple_BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QLCHApple_DTO\QLCHApple_DTO.csproj">
+      <Project>{87b074d7-5c96-485a-9ee0-0d6a9724b47a}</Project>
+      <Name>QLCHApple_DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\back-ground-dang-nhap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\F9F8CC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\apple_logo_PNG19679.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\365899.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\3D5B99.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\182547.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\D2323F.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\DBA800.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\509C0A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\0078D7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Model\iphone-x-select-2017.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Model\Macbook-PNG-Photos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\conference-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\product-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\invoice-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\info-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\E8EBF3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\293541.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\E1DDDF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\EBDFE2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\E87E31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\add-user-3-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\add-user-3-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\243240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\edit-user-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\disapprove-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\add-user-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\remove-user-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\add-user-2-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\checked-user-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\A6640C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\67CE00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\talk-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\6600CE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\34495E.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\sell-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\01ABAA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\add-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\plus-4-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\edit-8-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\plus-5-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\x-mark-4-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\plus-2-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\edit-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\x-mark-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\checkmark-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\CBB6A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\purchase-order-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\655B51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background\505A65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a47b0e87eb68bf6689c0d827d4008832.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Model\two_powerful_lenses_large.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5e830c119d6c13c2d098dfd1e32854e0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\icons8_Shutdown_52px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\icons8_Shutdown_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\icons8_Info_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\icons8_Info_32px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\icons8_Info_32px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\icons8_Info_32px_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\icons8_Login_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\icons8_Menu_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\icons8_Back_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\icons8_Male_User_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\icons8_Male_User_32px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\icons8_Male_User.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\icons8_More_Info_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\collaborator-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\icons8_Apple_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\report\hot-badge-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\report\hot-badge-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\report\hot-badge-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\report\bill-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\report\filled-box-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\software-box-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\icons8_Product_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Item\icons8_Product_100px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Splash\Untitled1.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
