@@ -354,9 +354,6 @@
     <EmbeddedResource Include="Report\rtpInHoaDonBan.resx">
       <DependentUpon>rtpInHoaDonBan.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="..\.editorconfig">
-      <Link>.editorconfig</Link>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\QLCHApple_DTO.ChiTietModel_DTO.datasource" />
     <None Include="Properties\DataSources\QLCHApple_DTO.Frm_DTO.datasource" />

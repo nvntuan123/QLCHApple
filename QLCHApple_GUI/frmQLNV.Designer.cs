@@ -483,7 +483,7 @@
             this.lblQuayLai.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
             this.lblQuayLai.AppearanceHovered.Options.UseBackColor = true;
             this.lblQuayLai.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblQuayLai.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.lblQuayLai.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Flat;
             this.lblQuayLai.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblQuayLai.Location = new System.Drawing.Point(0, 0);
             this.lblQuayLai.Name = "lblQuayLai";
